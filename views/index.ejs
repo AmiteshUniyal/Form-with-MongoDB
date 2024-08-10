@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/submit" method="post">
+        <div class="container">
+          <div class="first">
+            <h1 style="text-decoration: underline;">REGISTRATION FORM</h1>
+            <h2>Profile</h2>
+            <div class="innerfirst">
+                <div class="username_container">
+                  <div>
+                    <label for="username" style="font-size: large;">Username</label>
+                  </div>
+                  <div>
+                    <input type="text" name="username" id="username" autocomplete="username" class="input_username" placeholder="Username must be unique">
+                  </div>
+                </div>
+      
+              <div class="about">
+                <div>
+                  <label for="about" style="font-size: large;">About</label>
+                </div>                
+                <div style="margin-top: 1em;">
+                  <textarea id="about" name="about" rows="3" class="textarea"></textarea>
+                  <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div style="border: 2px solid white; padding: 2em;">
+              <h2>Personal Information</h2>
+              <p style="padding-top: 1em;">Use a permanent address where you can receive mail.</p>
+      
+            <div >
+              <div style="display: flex; justify-content: center; align-items: center; gap: 1em;">
+                <div>
+                  <label for="firstname" style="font-size: large;">First Name</label>
+                </div>
+                <div>
+                  <input type="text" name="firstname"  class="input_username" placeholder="First name">
+                </div>
+              </div> <br>
+      
+              <div style="display: flex; justify-content: center; align-items: center; gap: 1em;">
+                <div>
+                  <label for="lastname" style="font-size: large;">Last Name</label>
+                </div>
+                <div>
+                  <input type="text" name="lastname"   class="input_username" placeholder="Last Name">
+                </div>
+              </div><br>
+              <div style="display: flex; justify-content: center; align-items: center; gap: 3em;">
+                <div>
+                  <label for="email" style="font-size: large;">E-mail</label>
+                </div>
+                <div>
+                  <input id="email" name="email" type="email" autocomplete="email" class="input_username" >
+                </div>
+              </div>   <br>
+              <div style="display: flex; justify-content: center; align-items: center; gap: 2em;">
+                <div>
+                  <label for="country" style="font-size: large;">Country</label>
+                </div>
+                <div>
+                  <select id="country" name="country" autocomplete="country-name" class="input_username" style="color: rgb(187, 181, 181);">
+                    <option>United States</option>
+                    <option>India</option>
+                    <option>Spain</option>
+                    <option>Mexico</option>
+                    <option>China</option>
+                    <option>Russia</option>
+                    <option>United Kingdom</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Italy</option>
+                    <option>Brazil</option>
+                    <option>South Korea</option>
+                    <option>Australia</option>
+                    <option>Japan</option>
+                    <option>Indonesia</option>
+                    <option>Netherlands</option>
+                    <option>Saudi Arabia</option>
+                    <option>Turkey</option>
+                    <option>Switzerland</option>
+                    <option>Sweden</option>
+                    <option>Poland</option>
+                    <option>Belgium</option>
+                    <option>Thailand</option>
+                    <option>Iran</option>
+                    <option>Austria</option>
+                  </select>
+                </div>
+              </div>     
+            </div>
+          <div style="display: flex; justify-content: center; gap: 2em; margin-top: 1em;">
+            <button type="submit"  style="padding: 0.5em; border-radius: 1em; background-color: rgb(70, 70, 185); font-size: larger; color: white;">Submit</button>
+          </div>
+          </div>
+    </form>
+</body>
+</html>
