@@ -29,12 +29,12 @@ const port = process.env.PORT || 5000;
 app.post("/submit", async (req, res) => {
   try {
     const user = new User({
-        username: req.body.username,
-        First_name: req.body.firstname,
-        Last_name: req.body.lastname,
-        email: req.body.email,
-        country: req.body.country,
-        about: req.body.about,
+      username: req.body.username,
+      First_name: req.body.firstname,
+      Last_name: req.body.lastname,
+      email: req.body.email,
+      country: req.body.country,
+      about: req.body.about,
     });
     await user.save();
     res.sendFile(__dirname + "/public/submit.html");
